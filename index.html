@@ -46,6 +46,11 @@
     <!-- template styles -->
     <link rel="stylesheet" href="assets/css/entox.css" />
     <link rel="stylesheet" href="assets/css/entox-responsive.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIge8SKUYjjhEEzG2yEtvgm4aG9a9aK50&libraries=places&callback=initMap">
+</script>
 </head>
 
 <body>
@@ -55,28 +60,7 @@
     <!-- /.preloader -->
     <div class="page-wrapper">
         <header class="main-header clearfix">
-            <div class="main-header__top">
-                <div class="main-header__top-left">
-                    <p class="main-header__top-left-text">Welcome to our Rental Marketplace, <a href="#">Register
-                            Now</a></p>
-                </div>
-                <div class="main-header__top-right">
-                    <div class="main-header__top-right-social-box">
-                        <div class="main-header__top-right-social">
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="clr-fb"><i class="fab fa-facebook"></i></a>
-                            <a href="#" class="clr-dri"><i class="fab fa-dribbble"></i></a>
-                            <a href="#" class="clr-ins"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                    <div class="main-header__top-right-contact-box">
-                        <ul class="list-unstyled main-header__top-right-contact">
-                            <li><a href="mailto:needhelp@company.com">needhelp@company.com</a></li>
-                            <li><a href="tel:00-666-888-0000">00 666 888 0000</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            
             <nav class="main-menu clearfix">
                 <div class="main-menu-wrapper clearfix">
                     <div class="main-menu-wrapper__left clearfix">
@@ -133,10 +117,10 @@
                     <div class="main-menu-wrapper__right">
                         <div class="main-menu-wrapper__search-box-cart-box">
                             <a href="#" class="main-menu-wrapper__search search-toggler icon-magnifying-glass"></a>
-                            <a href="#" class="main-menu-wrapper__cart icon-shopping-cart mini-cart__toggler"></a>
+                            
                         </div>
                         <div class="main-menu-wrapper__btn-box">
-                            <a href="#" class="thm-btn main-menu-wrapper__btn">Submit Ad</a>
+                            <a href="#" class="thm-btn main-menu-wrapper__btn">Offer a Ride <i class="bi bi-plus-square"></i></a>
                         </div>
                     </div>
                 </div>
@@ -173,51 +157,16 @@
                         <!-- /.image-layer -->
                         <div class="container">
                             <div class="row">
-                                <div class="col-lg-12 text-center">
+                                <div class="col-lg-12 text-center position-absolute main-title">
                                     <div class="main-slider__content">
-                                        <h2>Global Online <br> Car Rental Services</h2>
-                                        <p>No Hidden Charges. Entox Trusted by 3800 Customers Arround the World!</p>
+                                        <h2 class="main-heading">Let’s hit the Road Together</h2>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="image-layer"
-                            style="background-image: url(assets/images/backgrounds/main-slider-1-2.jpg);">
-                        </div>
-
-                        <div class="image-layer-overlay"></div>
-                        <!-- /.image-layer -->
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12 text-center">
-                                    <div class="main-slider__content">
-                                        <h2>Global Online <br> Car Rental Services</h2>
-                                        <p>No Hidden Charges. Entox Trusted by 3800 Customers Arround the World!</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="image-layer"
-                            style="background-image: url(assets/images/backgrounds/main-slider-1-3.jpg);">
-                        </div>
-
-                        <div class="image-layer-overlay"></div>
-                        <!-- /.image-layer -->
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12 text-center">
-                                    <div class="main-slider__content">
-                                        <h2>Global Online <br> Car Rental Services</h2>
-                                        <p>No Hidden Charges. Entox Trusted by 3800 Customers Arround the World!</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                   
+                    
                 </div>
                 <!-- If we need navigation buttons -->
                 <div class="main-slider__nav">
@@ -237,31 +186,14 @@
         <section class="search-box">
             <div class="search-box__container">
                 <form class="search-box__form">
-                    <ul class="list-unstyled search-box__main clearfix">
+                    <ul class="list-unstyled search-box__main clearfix search-list">
                         <li class="search-box__input">
-                            <select class="selectpicker" aria-label="Default select example">
-                                <option selected>Pick-up location</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
+                            <input type="text" class="selectpicker" id="search-input" placeholder="Pick-up location">
                         </li>
                         <li class="search-box__input">
-                            <select class="selectpicker" aria-label="Default select example">
-                                <option selected>Drop-off location</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
+                            <input type="text" class="selectpicker" id="search-input" placeholder="Drop-off location">
                         </li>
-                        <li class="search-box__input">
-                            <select class="selectpicker" aria-label="Default select example">
-                                <option selected>Select car class</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                        </li>
+                        
                         <li class="search-box__input">
                             <input type="text" name="date" placeholder="Select date" id="datepicker">
                             <div class="search-box__icon-box">
@@ -275,7 +207,7 @@
                             </div>
                         </li>
                         <li class="search-box__input">
-                            <button type="submit" class="search-box__btn">Find Your Car</button>
+                            <button type="submit" class="search-box__btn">Find Your Ride</button>
                         </li>
                     </ul>
                 </form>
@@ -289,7 +221,6 @@
             <div class="container">
                 <div class="section-title text-center">
                     <span class="section-title__tagline">Meet the Right Services</span>
-                    <h2 class="section-title__title">Ride Premium Cars</h2>
                 </div>
                 <div class="row">
                     <div class="col-xl-12">
@@ -332,13 +263,11 @@
                     <div class="col-xl-6 col-lg-8">
                         <div class="section-title text-left">
                             <span class="section-title__tagline">People Love the Most</span>
-                            <h2 class="section-title__title">Featured Rent Cars</h2>
+                            <h2 class="section-title__title">Most popular Rides</h2>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-4">
-                        <div class="featured-one__btn-box">
-                            <a href="#" class="thm-btn featured-one__btn">View All Cars</a>
-                        </div>
+                        
                     </div>
                 </div>
                 <div class="row">
@@ -347,9 +276,9 @@
                             <div class="featured-one__left-img">
                                 <img src="assets/images/resources/featured-one-img-1.jpg" alt="">
                                 <div class="featured-one__left-img-content">
-                                    <h2 class="featured-one__left-img-title"><a href="listings-details.html">Land Rover
-                                            Evoque Pure</a></h2>
-                                    <p class="featured-one__left-car-price"><span>$32</span> /perday</p>
+                                    <h2 class="featured-one__left-img-title"><a href="listings-details.html"><span> Mangalapuram</span> <i class="bi bi-arrow-right"></i>
+                                        <span> Goa</span></a></h2>
+                                    <p class="featured-one__left-car-price"><span>₹3200</span> /per-ride</p>
                                 </div>
                             </div>
                         </div>
@@ -364,7 +293,7 @@
                                         <div class="featured-one__img-content">
                                             <h3 class="featured-one__img-content-title"><a
                                                     href="listings-details.html">Toyota Prius Auto</a></h3>
-                                            <p class="featured-one__img-content-car-price"><span>$32</span> /perday</p>
+                                            <p class="featured-one__img-content-car-price"><span>₹32</span> /perday</p>
                                         </div>
                                     </div>
                                 </div>
@@ -377,7 +306,7 @@
                                         <div class="featured-one__img-content">
                                             <h3 class="featured-one__img-content-title"><a
                                                     href="listings-details.html">Toyota Prius Auto</a></h3>
-                                            <p class="featured-one__img-content-car-price"><span>$32</span> /perday</p>
+                                            <p class="featured-one__img-content-car-price"><span>₹32</span> /perday</p>
                                         </div>
                                     </div>
                                 </div>
@@ -390,7 +319,7 @@
                                         <div class="featured-one__img-content">
                                             <h3 class="featured-one__img-content-title"><a
                                                     href="listings-details.html">Toyota Prius Auto</a></h3>
-                                            <p class="featured-one__img-content-car-price"><span>$32</span> /perday</p>
+                                            <p class="featured-one__img-content-car-price"><span>₹32</span> /perday</p>
                                         </div>
                                     </div>
                                 </div>
@@ -403,7 +332,7 @@
                                         <div class="featured-one__img-content">
                                             <h3 class="featured-one__img-content-title"><a
                                                     href="listings-details.html">Toyota Prius Auto</a></h3>
-                                            <p class="featured-one__img-content-car-price"><span>$32</span> /perday</p>
+                                            <p class="featured-one__img-content-car-price"><span>₹32</span> /perday</p>
                                         </div>
                                     </div>
                                 </div>
@@ -416,170 +345,47 @@
         <!--Featured One End-->
 
         <!--Explore Car Start-->
-        <section class="explore-car">
-            <div class="explore-car__container">
-                <div class="section-title text-center">
-                    <span class="section-title__tagline">Browse Hot Offers</span>
-                    <h2 class="section-title__title">Explore Car Range</h2>
-                </div>
-                <div class="row">
-                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
-                        <!--Explore Car Single-->
-                        <div class="explore-car__single">
-                            <div class="explore-car__img">
-                                <img src="assets/images/resources/explore-car-img-1.jpg" alt="">
-                                <div class="explore-car__icon">
-                                    <i class="far fa-heart"></i>
-                                </div>
-                            </div>
-                            <div class="explore-car__content">
-                                <h5 class="explore-car__sub-title">Sedan Car</h5>
-                                <h3 class="explore-car__title"><a href="listings-details.html">Land Rover Evoque
-                                        Pure</a></h3>
-                                <p class="explore-car__price"><span>$32 </span>/perday</p>
-                                <ul class="list-unstyled explore-car__details">
-                                    <li><a href="#">2016 Petrol</a></li>
-                                    <li><a href="#">Air Condition</a></li>
-                                    <li><a href="#">Auto</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
-                        <!--Explore Car Single-->
-                        <div class="explore-car__single">
-                            <div class="explore-car__img">
-                                <img src="assets/images/resources/explore-car-img-2.jpg" alt="">
-                                <div class="explore-car__icon">
-                                    <i class="far fa-heart"></i>
-                                </div>
-                            </div>
-                            <div class="explore-car__content">
-                                <h5 class="explore-car__sub-title">Sedan Car</h5>
-                                <h3 class="explore-car__title"><a href="listings-details.html">Land Rover Evoque
-                                        Pure</a></h3>
-                                <p class="explore-car__price"><span>$32 </span>/perday</p>
-                                <ul class="list-unstyled explore-car__details">
-                                    <li><a href="#">2016 Petrol</a></li>
-                                    <li><a href="#">Air Condition</a></li>
-                                    <li><a href="#">Auto</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
-                        <!--Explore Car Single-->
-                        <div class="explore-car__single">
-                            <div class="explore-car__img">
-                                <img src="assets/images/resources/explore-car-img-3.jpg" alt="">
-                                <div class="explore-car__icon">
-                                    <i class="far fa-heart"></i>
-                                </div>
-                            </div>
-                            <div class="explore-car__content">
-                                <h5 class="explore-car__sub-title">Sedan Car</h5>
-                                <h3 class="explore-car__title"><a href="listings-details.html">Land Rover Evoque
-                                        Pure</a></h3>
-                                <p class="explore-car__price"><span>$32 </span>/perday</p>
-                                <ul class="list-unstyled explore-car__details">
-                                    <li><a href="#">2016 Petrol</a></li>
-                                    <li><a href="#">Air Condition</a></li>
-                                    <li><a href="#">Auto</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
-                        <!--Explore Car Single-->
-                        <div class="explore-car__single">
-                            <div class="explore-car__img">
-                                <img src="assets/images/resources/explore-car-img-4.jpg" alt="">
-                                <div class="explore-car__icon">
-                                    <i class="far fa-heart"></i>
-                                </div>
-                            </div>
-                            <div class="explore-car__content">
-                                <h5 class="explore-car__sub-title">Sedan Car</h5>
-                                <h3 class="explore-car__title"><a href="listings-details.html">Land Rover Evoque
-                                        Pure</a></h3>
-                                <p class="explore-car__price"><span>$32 </span>/perday</p>
-                                <ul class="list-unstyled explore-car__details">
-                                    <li><a href="#">2016 Petrol</a></li>
-                                    <li><a href="#">Air Condition</a></li>
-                                    <li><a href="#">Auto</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
         <!--Explore Car End-->
 
         <!--Rent a Car Start-->
-        <section class="rent-car">
+        
+        <!--Rent a Car End-->
+
+        
+
+        <!--About One Start-->
+        <section class="about-one">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-6 col-lg-6">
-                        <div class="rent-car__left">
-                            <div class="rent-car__img">
-                                <img src="assets/images/resources/rent-car-img-1.jpg" alt="">
-                                <div class="rent-car__vid-link">
-                                    <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ"
-                                        class="rent-car__video-btn video-popup">
-                                        <div class="rent-car__video-icon">
-                                            <span class="fa fa-play"></span>
-                                            <i class="ripple"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
+                    <div class="col-xl-6 col-lg-6 wow slideInLeft" data-wow-duration="1500ms">
+                        <div class="about-one__img">
+                            <img src="assets/images/resources/about-one-img-1.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6">
-                        <div class="rent-car__right">
+                        <div class="about-one__content">
                             <div class="section-title text-left">
                                 <span class="section-title__tagline">Get More Information</span>
                                 <h2 class="section-title__title">About Premium Rent A Car</h2>
                             </div>
-                            <ul class="list-unstyled rent-car__list-box">
-                                <li>
-                                    <div class="rent-car__icon">
-                                        <span class="icon-tick"></span>
-                                    </div>
-                                    <div class="rent-car__content">
-                                        <h4 class="rent-car__content-title">Wide Range of Cars</h4>
-                                        <p class="rent-car__content-text">Lorem Ipsum nibh vel velit auctor aliquet.
-                                            Aenean sollic tudin, lorem is simply free text quis bibendum.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="rent-car__icon">
-                                        <span class="icon-tick"></span>
-                                    </div>
-                                    <div class="rent-car__content">
-                                        <h4 class="rent-car__content-title">Trusted of Thousands</h4>
-                                        <p class="rent-car__content-text">Lorem Ipsum nibh vel velit auctor aliquet.
-                                            Aenean sollic tudin, lorem is simply free text quis bibendum.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="rent-car__icon">
-                                        <span class="icon-tick"></span>
-                                    </div>
-                                    <div class="rent-car__content">
-                                        <h4 class="rent-car__content-title">Best Car Rental Services</h4>
-                                        <p class="rent-car__content-text">Lorem Ipsum nibh vel velit auctor aliquet.
-                                            Aenean sollic tudin, lorem is simply free text quis bibendum.</p>
-                                    </div>
-                                </li>
-                            </ul>
+                            <p class="about-one__text">There are many variations of passages of Lorem Ipsum available,
+                                but the majority have suffered alteration in some form.</p>
+                            <div class="about-one__bottom">
+                                <div class="about-one__bottom-icon">
+                                    <span class="icon-car-rental"></span>
+                                </div>
+                                <div class="about-one__bottom-text">
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have suffered alteration in some form.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--Rent a Car End-->
+        <!--About One End-->
 
         <!--Download Start-->
         <section class="download">
@@ -617,200 +423,7 @@
         </section>
         <!--Download End-->
 
-        <!--About One Start-->
-        <section class="about-one">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6 wow slideInLeft" data-wow-duration="1500ms">
-                        <div class="about-one__img">
-                            <img src="assets/images/resources/about-one-img-1.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6">
-                        <div class="about-one__content">
-                            <div class="section-title text-left">
-                                <span class="section-title__tagline">Get More Information</span>
-                                <h2 class="section-title__title">About Premium Rent A Car</h2>
-                            </div>
-                            <p class="about-one__text">There are many variations of passages of Lorem Ipsum available,
-                                but the majority have suffered alteration in some form.</p>
-                            <div class="about-one__bottom">
-                                <div class="about-one__bottom-icon">
-                                    <span class="icon-car-rental"></span>
-                                </div>
-                                <div class="about-one__bottom-text">
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
-                                        have suffered alteration in some form.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--About One End-->
-
-        <!--Brand One Start-->
-        <section class="brand-one">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
-                        <!--Brand One Single-->
-                        <div class="brand-one__single">
-                            <div class="brand-one__main-img">
-                                <a href="#"><img src="assets/images/brand/brand-1-1.png" alt=""></a>
-                            </div>
-                            <div class="brand-one__overly">
-                                <a href="#"><img src="assets/images/brand/brand-1-1-overly.png" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
-                        <!--Brand One Single-->
-                        <div class="brand-one__single">
-                            <div class="brand-one__main-img">
-                                <a href="#"><img src="assets/images/brand/brand-1-2.png" alt=""></a>
-                            </div>
-                            <div class="brand-one__overly">
-                                <a href="#"><img src="assets/images/brand/brand-1-2-overly.png" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
-                        <!--Brand One Single-->
-                        <div class="brand-one__single">
-                            <div class="brand-one__main-img">
-                                <a href="#"><img src="assets/images/brand/brand-1-3.png" alt=""></a>
-                            </div>
-                            <div class="brand-one__overly">
-                                <a href="#"><img src="assets/images/brand/brand-1-3-overly.png" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
-                        <!--Brand One Single-->
-                        <div class="brand-one__single">
-                            <div class="brand-one__main-img">
-                                <a href="#"><img src="assets/images/brand/brand-1-4.png" alt=""></a>
-                            </div>
-                            <div class="brand-one__overly">
-                                <a href="#"><img src="assets/images/brand/brand-1-4-overly.png" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Brand One End-->
-
-        <!--News One Start-->
-        <section class="news-one">
-            <div class="container">
-                <div class="section-title text-center">
-                    <span class="section-title__tagline">Directly From the Blog</span>
-                    <h2 class="section-title__title">News & Articles</h2>
-                </div>
-                <div class="row">
-                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
-                        <!--News One Single-->
-                        <div class="news-one__single">
-                            <div class="news-one__img">
-                                <img src="assets/images/blog/news-one-1.jpg" alt="">
-                                <div class="news-one__date-box">
-                                    <p>20 <br> Apr</p>
-                                </div>
-                                <a href="news-details.html">
-                                    <span class="news-one__plus"></span>
-                                </a>
-                            </div>
-                            <div class="news-one__content">
-                                <ul class="list-unstyled news-one__meta">
-                                    <li><a href="news-details.html"><i class="fas fa-tags"></i> Rental</a></li>
-                                    <li><a href="news-details.html"><i class="fas fa-comments"></i> 2 Comments</a>
-                                    </li>
-                                </ul>
-                                <h3 class="news-one__title">
-                                    <a href="news-details.html">Guide to Create a Listing Based Business</a>
-                                </h3>
-                                <div class="news-one__person">
-                                    <div class="news-one__person-img">
-                                        <img src="assets/images/blog/news-one-person-1.png" alt="">
-                                    </div>
-                                    <div class="news-one__person-text">
-                                        <span>Mike Hardson</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
-                        <!--News One Single-->
-                        <div class="news-one__single">
-                            <div class="news-one__img">
-                                <img src="assets/images/blog/news-one-2.jpg" alt="">
-                                <div class="news-one__date-box">
-                                    <p>20 <br> Apr</p>
-                                </div>
-                                <a href="news-details.html">
-                                    <span class="news-one__plus"></span>
-                                </a>
-                            </div>
-                            <div class="news-one__content">
-                                <ul class="list-unstyled news-one__meta">
-                                    <li><a href="news-details.html"><i class="fas fa-tags"></i> Rental</a></li>
-                                    <li><a href="news-details.html"><i class="fas fa-comments"></i> 2 Comments</a>
-                                    </li>
-                                </ul>
-                                <h3 class="news-one__title">
-                                    <a href="news-details.html">Guide to Create a Listing Based Business</a>
-                                </h3>
-                                <div class="news-one__person">
-                                    <div class="news-one__person-img">
-                                        <img src="assets/images/blog/news-one-person-2.png" alt="">
-                                    </div>
-                                    <div class="news-one__person-text">
-                                        <span>Jessica Brown</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
-                        <!--News One Single-->
-                        <div class="news-one__single">
-                            <div class="news-one__img">
-                                <img src="assets/images/blog/news-one-3.jpg" alt="">
-                                <div class="news-one__date-box">
-                                    <p>20 <br> Apr</p>
-                                </div>
-                                <a href="news-details.html">
-                                    <span class="news-one__plus"></span>
-                                </a>
-                            </div>
-                            <div class="news-one__content">
-                                <ul class="list-unstyled news-one__meta">
-                                    <li><a href="news-details.html"><i class="fas fa-tags"></i> Rental</a></li>
-                                    <li><a href="news-details.html"><i class="fas fa-comments"></i> 2 Comments</a>
-                                    </li>
-                                </ul>
-                                <h3 class="news-one__title">
-                                    <a href="news-details.html">Guide to Create a Listing Based Business</a>
-                                </h3>
-                                <div class="news-one__person">
-                                    <div class="news-one__person-img">
-                                        <img src="assets/images/blog/news-one-person-3.png" alt="">
-                                    </div>
-                                    <div class="news-one__person-text">
-                                        <span>Kevin Martin</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--News One End-->
+        
 
         <!--CTA One Start-->
         <section class="cta-one">
@@ -851,7 +464,7 @@
                                 </div>
                                 <p class="footer-widget__about-text">Lorem ipsum dolor sit ame consect etur pisicing
                                     elit sed do eiusmod tempor incididunt ut labore.</p>
-                                <a href="#" class="thm-btn footer-widget__about-btn">Submit Ad</a>
+                                <a href="#" class="thm-btn footer-widget__about-btn">Offer a Ride<i class="bi bi-plus-square"></i></a>
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
@@ -1040,6 +653,19 @@
 
     <!-- template js -->
     <script src="assets/js/entox.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script>
+        var defaultBounds = new google.maps.LatLngBounds(
+  new google.maps.LatLng(-33.8902, 151.1759),
+  new google.maps.LatLng(-33.8474, 151.2631));
+
+var input = document.getElementById('searchTextField');
+
+var searchBox = new google.maps.places.SearchBox(input, {
+  bounds: defaultBounds
+});
+
+    </script>
 </body>
 
 

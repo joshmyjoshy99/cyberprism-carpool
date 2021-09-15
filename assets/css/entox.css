@@ -2185,7 +2185,7 @@ ul {
     position: relative;
     display: block;
     padding: 0 0 0;
-    margin-top: -230px;
+    margin-top: -330px;
     z-index: 2;
 }
 
@@ -2198,6 +2198,7 @@ ul {
     padding: 60px 60px 60px;
     margin: 0 auto;
     border-radius: var(--thm-border-radius);
+    
 }
 
 .search-box__form {
@@ -2306,7 +2307,7 @@ ul {
     color: var(--thm-base);
     font-weight: 700;
     background-color: var(--thm-black);
-    padding: 20.5px 90px;
+    padding: 20.5px 0px;
     border-radius: var(--thm-border-radius);
     transition: all 500ms ease;
 }
