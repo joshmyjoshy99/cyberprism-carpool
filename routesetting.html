@@ -2,11 +2,12 @@
 <html lang="en">
 
 
-<!-- Mirrored from layerdrops.com/entox/listings.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Sep 2021 06:52:41 GMT -->
+<!-- Mirrored from layerdrops.com/entox/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Sep 2021 06:49:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Listings || Entox || Entox HTML Template For Car Business</title>
+    <title>Routsetting</title>
     <!-- favicons Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
@@ -45,6 +46,11 @@
     <!-- template styles -->
     <link rel="stylesheet" href="assets/css/entox.css" />
     <link rel="stylesheet" href="assets/css/entox-responsive.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIge8SKUYjjhEEzG2yEtvgm4aG9a9aK50&libraries=places&callback=initMap">
+</script>
 </head>
 
 <body>
@@ -54,28 +60,7 @@
     <!-- /.preloader -->
     <div class="page-wrapper">
         <header class="main-header main-header-listing-page clearfix">
-            <div class="main-header__top">
-                <div class="main-header__top-left">
-                    <p class="main-header__top-left-text">Welcome to our Rental Marketplace, <a href="#">Register
-                            Now</a></p>
-                </div>
-                <div class="main-header__top-right">
-                    <div class="main-header__top-right-social-box">
-                        <div class="main-header__top-right-social">
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="clr-fb"><i class="fab fa-facebook"></i></a>
-                            <a href="#" class="clr-dri"><i class="fab fa-dribbble"></i></a>
-                            <a href="#" class="clr-ins"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                    <div class="main-header__top-right-contact-box">
-                        <ul class="list-unstyled main-header__top-right-contact">
-                            <li><a href="mailto:needhelp@company.com">needhelp@company.com</a></li>
-                            <li><a href="tel:00-666-888-0000">00 666 888 0000</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            
             <nav class="main-menu clearfix">
                 <div class="main-menu-wrapper clearfix">
                     <div class="main-menu-wrapper__left">
@@ -103,28 +88,16 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="dropdown current">
-                                    <a href="#">Rent a Car</a>
-                                    <ul>
-                                        <li><a href="listings.html">Listings</a></li>
-                                        <li><a href="listings-details.html">Listings Details</a></li>
-                                    </ul>
-                                </li>
+                                
                                 <li class="dropdown">
-                                    <a href="#">Pages</a>
-                                    <ul>
+                                    <a href="help.html">Help</a>
+                                    <!-- <ul>
                                         <li><a href="about.html">About</a></li>
                                         <li><a href="how-it-works.html">How It Works</a></li>
                                         <li><a href="404.html">404</a></li>
-                                    </ul>
+                                    </ul> -->
                                 </li>
-                                <li class="dropdown">
-                                    <a href="#">News</a>
-                                    <ul>
-                                        <li><a href="news.html">News</a></li>
-                                        <li><a href="news-details.html">News Details</a></li>
-                                    </ul>
-                                </li>
+                                
                                 <li><a href="contact.html">Contact</a></li>
                             </ul>
                         </div>
@@ -135,7 +108,7 @@
                             <a href="#" class="main-menu-wrapper__cart icon-shopping-cart mini-cart__toggler"></a>
                         </div>
                         <div class="main-menu-wrapper__btn-box">
-                            <a href="#" class="thm-btn main-menu-wrapper__btn">Submit Ad</a>
+                            <a href="index2.html" class="thm-btn main-menu-wrapper__btn">Offer a Ride <i class="bi bi-plus-square"></i></a>
                         </div>
                     </div>
                 </div>
@@ -151,9 +124,9 @@
             <div class="listing-top__container">
                 <div class="listing-top__left">
                     <ul class=" list-unstyled listing-top__menu">
-                        <li><a href="index-2.html">Home</a></li>
+                        <!-- <li><a href="index-2.html">Home</a></li>
                         <li><span>-</span></li>
-                        <li>09 Results</li>
+                        <li>09 Results</li> -->
                     </ul>
                 </div>
                 <div class="listing-top__right">
@@ -182,7 +155,12 @@
                                         <div class="row">
                                             <div class="col-xl-6">
                                                 <div class="listing__search-input">
-                                                    <input type="text" placeholder="Enter keywords">
+                                                    <input type="text" placeholder="Pick-up Location">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="listing__search-input">
+                                                    <input type="text" placeholder="Drop-off Location">
                                                 </div>
                                             </div>
                                             <div class="col-xl-6">
@@ -198,7 +176,7 @@
                                             <div class="col-xl-6">
                                                 <div class="listing__search-input">
                                                     <select class="selectpicker" aria-label="Default select example">
-                                                        <option selected>Select make</option>
+                                                        <option selected>Select route</option>
                                                         <option value="1">One</option>
                                                         <option value="2">Two</option>
                                                         <option value="3">Three</option>
@@ -207,33 +185,12 @@
                                             </div>
                                             <div class="col-xl-6">
                                                 <div class="listing__search-input">
-                                                    <select class="selectpicker" aria-label="Default select example">
-                                                        <option selected>Select model</option>
-                                                        <option value="1">One</option>
-                                                        <option value="2">Two</option>
-                                                        <option value="3">Three</option>
-                                                    </select>
+                                                    <input type="time" placeholder="Time" style="width: 390px; height: 70px;">
                                                 </div>
                                             </div>
                                             <div class="col-xl-6">
                                                 <div class="listing__search-input">
-                                                    <select class=" selectpicker" aria-label="Default select example">
-                                                        <option selected>Transmission</option>
-                                                        <option value="1">One</option>
-                                                        <option value="2">Two</option>
-                                                        <option value="3">Three</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-6">
-                                                <div class="listing__search-input">
-                                                    <select class="selectpicker" aria-label="Default select example">
-                                                        <option selected>Select year</option>
-                                                        <option value="1">2016</option>
-                                                        <option value="2">2017</option>
-                                                        <option value="3">2018</option>
-                                                        <option value="3">2019</option>
-                                                    </select>
+                                                    <input type="date" placeholder="" style="width: 390px; height: 70px;">
                                                 </div>
                                             </div>
                                             <div class="col-xl-6">
@@ -253,22 +210,26 @@
                                             <div class="col-xl-6">
                                                 <div class="listing__search-input">
                                                     <select class="selectpicker" aria-label="Default select example">
-                                                        <option selected>Select year</option>
-                                                        <option value="1">2016</option>
-                                                        <option value="2">2017</option>
-                                                        <option value="3">2018</option>
-                                                        <option value="3">2019</option>
+                                                        <option selected>Number of Passengers</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
                                                     </select>
                                                 </div>
                                             </div>
+                                            <div class="col-xl-6">
+                                                <div class="listing__search-input">
+                                                    <input type="text" placeholder="Phone number">
+                                                </div>
+                                            </div>
                                         </div>
-                                        <button type="submit" class="linsting__btn">Find Your Car</button>
+                                        <button type="submit" class="linsting__btn"><a href="routesetting-details.html" style="color: white;"> Publish Your Ride</a></button>
                                     </form>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="listing__filter">
+                    <!-- <div class="listing__filter">
                         <div class="row">
                             <div class="col-xl-12">
                                 <div class="listing__filter-inner">
@@ -296,150 +257,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="listing__list-box">
-                        <div class="row">
-                            <div class="col-xl-6">
-                                <!--Listing List Box Single-->
-                                <div class="listing__list-box-single">
-                                    <div class="listing__list-box-img">
-                                        <img src="assets/images/resources/listing-list-box-img-1.jpg" alt="">
-                                        <div class="listing__list-box__icon">
-                                            <i class="far fa-heart"></i>
-                                        </div>
-                                    </div>
-                                    <div class="listing__list-box-content">
-                                        <h5 class="listing__list-box-sub-title">Sedan Car</h5>
-                                        <h3 class="listing__list-box-title">Land Rover Evoque Pure</h3>
-                                        <p class="listing__list-box-price"><span>$32 </span>/perday</p>
-                                        <ul class="list-unstyled listing__list-box-details">
-                                            <li>2016 Petrol</li>
-                                            <li>Air Condition</li>
-                                            <li>Auto</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6">
-                                <!--Listing List Box Single-->
-                                <div class="listing__list-box-single">
-                                    <div class="listing__list-box-img">
-                                        <img src="assets/images/resources/listing-list-box-img-2.jpg" alt="">
-                                        <div class="listing__list-box__icon">
-                                            <i class="far fa-heart"></i>
-                                        </div>
-                                    </div>
-                                    <div class="listing__list-box-content">
-                                        <h5 class="listing__list-box-sub-title">Sedan Car</h5>
-                                        <h3 class="listing__list-box-title">Land Rover Evoque Pure</h3>
-                                        <p class="listing__list-box-price"><span>$32 </span>/perday</p>
-                                        <ul class="list-unstyled listing__list-box-details">
-                                            <li>2016 Petrol</li>
-                                            <li>Air Condition</li>
-                                            <li>Auto</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6">
-                                <!--Listing List Box Single-->
-                                <div class="listing__list-box-single">
-                                    <div class="listing__list-box-img">
-                                        <img src="assets/images/resources/listing-list-box-img-3.jpg" alt="">
-                                        <div class="listing__list-box__icon">
-                                            <i class="far fa-heart"></i>
-                                        </div>
-                                    </div>
-                                    <div class="listing__list-box-content">
-                                        <h5 class="listing__list-box-sub-title">Sedan Car</h5>
-                                        <h3 class="listing__list-box-title">Land Rover Evoque Pure</h3>
-                                        <p class="listing__list-box-price"><span>$32 </span>/perday</p>
-                                        <ul class="list-unstyled listing__list-box-details">
-                                            <li>2016 Petrol</li>
-                                            <li>Air Condition</li>
-                                            <li>Auto</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6">
-                                <!--Listing List Box Single-->
-                                <div class="listing__list-box-single">
-                                    <div class="listing__list-box-img">
-                                        <img src="assets/images/resources/listing-list-box-img-4.jpg" alt="">
-                                        <div class="listing__list-box__icon">
-                                            <i class="far fa-heart"></i>
-                                        </div>
-                                    </div>
-                                    <div class="listing__list-box-content">
-                                        <h5 class="listing__list-box-sub-title">Sedan Car</h5>
-                                        <h3 class="listing__list-box-title">Land Rover Evoque Pure</h3>
-                                        <p class="listing__list-box-price"><span>$32 </span>/perday</p>
-                                        <ul class="list-unstyled listing__list-box-details">
-                                            <li>2016 Petrol</li>
-                                            <li>Air Condition</li>
-                                            <li>Auto</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6">
-                                <!--Listing List Box Single-->
-                                <div class="listing__list-box-single">
-                                    <div class="listing__list-box-img">
-                                        <img src="assets/images/resources/listing-list-box-img-5.jpg" alt="">
-                                        <div class="listing__list-box__icon">
-                                            <i class="far fa-heart"></i>
-                                        </div>
-                                    </div>
-                                    <div class="listing__list-box-content">
-                                        <h5 class="listing__list-box-sub-title">Sedan Car</h5>
-                                        <h3 class="listing__list-box-title">Land Rover Evoque Pure</h3>
-                                        <p class="listing__list-box-price"><span>$32 </span>/perday</p>
-                                        <ul class="list-unstyled listing__list-box-details">
-                                            <li>2016 Petrol</li>
-                                            <li>Air Condition</li>
-                                            <li>Auto</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6">
-                                <!--Listing List Box Single-->
-                                <div class="listing__list-box-single">
-                                    <div class="listing__list-box-img">
-                                        <img src="assets/images/resources/listing-list-box-img-6.jpg" alt="">
-                                        <div class="listing__list-box__icon">
-                                            <i class="far fa-heart"></i>
-                                        </div>
-                                    </div>
-                                    <div class="listing__list-box-content">
-                                        <h5 class="listing__list-box-sub-title">Sedan Car</h5>
-                                        <h3 class="listing__list-box-title">Land Rover Evoque Pure</h3>
-                                        <p class="listing__list-box-price"><span>$32 </span>/perday</p>
-                                        <ul class="list-unstyled listing__list-box-details">
-                                            <li>2016 Petrol</li>
-                                            <li>Air Condition</li>
-                                            <li>Auto</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="listing__pagination-box">
-                            <ul class="listing__pagination list-unstyled">
-                                <li class="next">
-                                    <a href="#" aria-label="Previous"><i class="fa fa-angle-left"></i></a>
-                                </li>
-                                <li class="count"><a href="#">1</a></li>
-                                <li class="count"><a href="#">2</a></li>
-                                <li class="count"><a href="#">3</a></li>
-                                <li class="previous">
-                                    <a href="#" aria-label="Next"><i class="fa fa-angle-right"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    </div> -->
+                    
                 </div>
                 <div class="listing__map">
                     <iframe
