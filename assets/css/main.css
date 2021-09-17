@@ -185,7 +185,7 @@
     background: linear-gradient(to top right, #fc2c77 0%, #6c4079 100%);
   } */
   .bg-gra-02{
-      background-image: url(../images/team.jpg);
+      background-image: url(../images/car.jpg);
       /* background-repeat: no-repeat; */
       background-size: cover;
   }
