@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Carpooling</title>
+    <title>Routsetting</title>
     <!-- favicons Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
@@ -59,18 +59,18 @@
     </div>
     <!-- /.preloader -->
     <div class="page-wrapper">
-        <header class="main-header clearfix">
+        <header class="main-header main-header-listing-page clearfix">
             
             <nav class="main-menu clearfix">
                 <div class="main-menu-wrapper clearfix">
-                    <div class="main-menu-wrapper__left clearfix">
+                    <div class="main-menu-wrapper__left">
                         <div class="main-menu-wrapper__logo">
                             <a href="index-2.html"><img src="assets/images/resources/logo-1.png" alt=""></a>
                         </div>
                         <div class="main-menu-wrapper__main-menu">
                             <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
                             <ul class="main-menu__list">
-                                <li class="dropdown current">
+                                <li class="dropdown">
                                     <a href="index-2.html">Home</a>
                                     <ul>
                                         <li>
@@ -88,13 +88,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <!-- <li class="dropdown">
-                                    <a href="#">Rent a Car</a>
-                                    <ul>
-                                        <li><a href="listings.html">Listings</a></li>
-                                        <li><a href="listings-details.html">Listings Details</a></li>
-                                    </ul>
-                                </li> -->
+                                
                                 <li class="dropdown">
                                     <a href="help.html">Help</a>
                                     <!-- <ul>
@@ -103,13 +97,7 @@
                                         <li><a href="404.html">404</a></li>
                                     </ul> -->
                                 </li>
-                                <!-- <li class="dropdown">
-                                    <a href="#">News</a>
-                                    <ul>
-                                        <li><a href="news.html">News</a></li>
-                                        <li><a href="news-details.html">News Details</a></li>
-                                    </ul>
-                                </li> -->
+                                
                                 <li><a href="contact.html">Contact</a></li>
                             </ul>
                         </div>
@@ -117,7 +105,7 @@
                     <div class="main-menu-wrapper__right">
                         <div class="main-menu-wrapper__search-box-cart-box">
                             <a href="#" class="main-menu-wrapper__search search-toggler icon-magnifying-glass"></a>
-                            
+                            <a href="#" class="main-menu-wrapper__cart icon-shopping-cart mini-cart__toggler"></a>
                         </div>
                         <div class="main-menu-wrapper__btn-box">
                             <a href="index2.html" class="thm-btn main-menu-wrapper__btn">Offer a Ride <i class="bi bi-plus-square"></i></a>
@@ -126,6 +114,7 @@
                 </div>
             </nav>
         </header>
+
         <div class="stricky-header stricked-menu main-menu">
             <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
         </div><!-- /.stricky-header -->
@@ -134,11 +123,10 @@
         <section class="listing-details-top">
             <div class="container">
                 <ul class="list-unstyled listing-details-top__menu">
-                    <li><a href="index-2.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><span>-</span></li>
-                    <li><a href="listings.html">Listings</a></li>
-                    <li><span>-</span></li>
-                    <li class="active"><a href="listings-details.html">Land Rover Evoque Pure</a></li>
+                    <li><a href="routesetting.html">Route Details</a></li>
+                    
                 </ul>
             </div>
         </section>
@@ -651,7 +639,7 @@
                     </div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="listing-details__right">
-                            <h3 class="listing-deails__right-title">Land Rover Evoque Pure</h3>
+                            <h3 class="listing-deails__right-title">Rate your Ride</h3>
                             <ul class="list-unstyled listing-deails__right-rating">
                                 <li><i class="fa fa-star"></i></li>
                                 <li><i class="fa fa-star"></i></li>
